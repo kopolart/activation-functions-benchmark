@@ -50,7 +50,7 @@ The result is a compact, reproducible reference for questions such as:
 
 ## Results at a glance
 
-Mean ± sample standard deviation over five seeds. Bold marks the best value in each column. Dead units are hidden units that never activate. First-layer gradient norms and saturated-unit fractions are in the results guide.
+Mean ± sample standard deviation over five seeds. Bold marks the best accuracy, loss, and convergence speed; lower dead-unit fractions are better. Dead units are hidden units that never activate. First-layer gradient norms and saturated-unit fractions are in the results guide.
 
 | Activation | Test accuracy | Train BCE | Test BCE | Epochs to BCE ≤ 0.30 | Dead units |
 |---|---:|---:|---:|---:|---:|
