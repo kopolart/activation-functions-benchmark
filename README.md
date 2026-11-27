@@ -50,14 +50,14 @@ The result is a compact, reproducible reference for questions such as:
 
 ## Results at a glance
 
-Mean ± sample standard deviation over five seeds. Bold marks the best value in each column. Grad norm is the first-layer value over the last 10 epochs; saturated-unit fractions are in the results guide.
+Mean ± sample standard deviation over five seeds. Bold marks the best value in each column. Dead units are hidden units that never activate. First-layer gradient norms and saturated-unit fractions are in the results guide.
 
-| Activation | Test accuracy | Train BCE | Test BCE | Epochs to BCE ≤ 0.30 | Grad norm | Dead units |
-|---|---:|---:|---:|---:|---:|---:|
-| Sigmoid | 95.11 ± 0.61% | 0.1434 | **0.1390** | 48.8 | 0.0641 | 0.00% |
-| Tanh | **95.78 ± 0.30%** | 0.1158 | 0.1430 | 6.6 | 0.1729 | 0.00% |
-| ReLU | 94.56 ± 1.73% | 0.0982 | 0.1751 | **3.6** | **0.2386** | 13.75% |
-| LeakyReLU (α = 0.01) | 95.56 ± 0.79% | **0.0909** | 0.1751 | **3.6** | 0.2354 | **0.00%** |
+| Activation | Test accuracy | Train BCE | Test BCE | Epochs to BCE ≤ 0.30 | Dead units |
+|---|---:|---:|---:|---:|---:|
+| Sigmoid | 95.11 ± 0.61% | 0.1434 | **0.1390** | 48.8 | 0.00% |
+| Tanh | **95.78 ± 0.30%** | 0.1158 | 0.1430 | 6.6 | 0.00% |
+| ReLU | 94.56 ± 1.73% | 0.0982 | 0.1751 | **3.6** | 13.75% |
+| LeakyReLU (α = 0.01) | 95.56 ± 0.79% | **0.0909** | 0.1751 | **3.6** | 0.00% |
 
 <p align="center"><em>Full per-seed numbers, confidence intervals, and statistical tests are in <a href="docs/RESULTS.md">docs/RESULTS.md</a>.</em></p>
 
