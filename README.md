@@ -75,8 +75,8 @@ Mean ± sample standard deviation over five seeds. Bold marks the best accuracy,
 | **Primary metric** | Test accuracy; secondary: convergence epoch, gradient norm, dead/saturated units |
 
 ~~~mermaid
-flowchart LR
-    A["Input<br/>2 features"] --> B["Linear 2→32<br/>+ activation"]
+flowchart TB
+    A["Input: 2 features"] --> B["Linear 2→32<br/>+ activation"]
     B --> C["Linear 32→32<br/>+ activation"]
     C --> D["Linear 32→32<br/>+ activation"]
     D --> E["Linear 32→1<br/>logit"]
