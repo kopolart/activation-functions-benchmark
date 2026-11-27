@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a bug or numerical discrepancy
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Include the exact command, config, or notebook cell.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, and relevant package versions.
+      placeholder: |
+        OS: Windows 11 / macOS / Ubuntu
+        Python: 3.x
+        torch: ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: Paste the relevant traceback or command output.
+      render: text

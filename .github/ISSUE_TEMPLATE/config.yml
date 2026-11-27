@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/kopolart/activation-functions-benchmark#documentation
+    about: Read the methodology, results, and reproducibility guides first.
+  - name: Security or conduct concern
+    url: https://github.com/kopolart
+    about: Contact the maintainer directly for sensitive reports.

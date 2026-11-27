@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "activation-functions-benchmark"
+version = "1.0.0"
+description = "A controlled PyTorch benchmark of Sigmoid, Tanh, ReLU, and LeakyReLU in a deep MLP."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ali Yousefi" }]
+keywords = [
+  "deep-learning",
+  "pytorch",
+  "activation-functions",
+  "relu",
+  "benchmark",
+  "reproducibility",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+  "torch>=2.2",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "nbformat>=5.9",
+  "nbclient>=0.10",
+  "ipykernel>=6.29",
+]
+
+[project.scripts]
+activation-benchmark = "activation_benchmark.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/kopolart/activation-functions-benchmark"
+Repository = "https://github.com/kopolart/activation-functions-benchmark"
+Issues = "https://github.com/kopolart/activation-functions-benchmark/issues"
+Changelog = "https://github.com/kopolart/activation-functions-benchmark/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["activation_benchmark"]

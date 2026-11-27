@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "Activation Functions Benchmark: A Controlled PyTorch Study of Nonlinearity in Deep MLPs"
+abstract: >-
+  A controlled comparison of Sigmoid, Tanh, ReLU, and LeakyReLU in a deep
+  multilayer perceptron on the two-moons dataset, covering optimization speed,
+  gradient flow, dead and saturated units, and test accuracy across five seeds.
+authors:
+  - family-names: Yousefi
+    given-names: Ali
+    alias: kopolart
+version: 1.0.0
+date-released: "2026-11-26"
+license: MIT
+repository-code: "https://github.com/kopolart/activation-functions-benchmark"
+url: "https://github.com/kopolart/activation-functions-benchmark"
+keywords:
+  - deep learning
+  - activation functions
+  - PyTorch
+  - ReLU
+  - benchmark
+  - reproducibility
+type: software
